@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C13D00CAAEDDDA0145DCD9D2 /* Pods_EncryptQRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F3B2E1EB057628E4DE6F6D /* Pods_EncryptQRTests.framework */; };
+		C6089A3E1F7EA639006B5358 /* EncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6089A3D1F7EA639006B5358 /* EncryptionService.swift */; };
+		C6089A401F7EBD2B006B5358 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6089A3F1F7EBD2B006B5358 /* Constants.swift */; };
+		C60E00B41F82A46E00F286D2 /* QRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E00B31F82A46E00F286D2 /* QRService.swift */; };
+		C60E00B61F82A81000F286D2 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E00B51F82A81000F286D2 /* QRScannerViewController.swift */; };
+		C617E9031F7D4CC4009182EB /* CustomLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617E9021F7D4CC4009182EB /* CustomLogFormatter.swift */; };
+		C617E9091F7D58AD009182EB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617E9081F7D58AD009182EB /* MainViewController.swift */; };
+		C617E90B1F7D58BD009182EB /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617E90A1F7D58BD009182EB /* MainController.swift */; };
+		C642074E1F7ED4AB008A2712 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C642074D1F7ED4AB008A2712 /* Photo.swift */; };
+		C6A41CCD1F825D1C000AF0D9 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A41CCC1F825D1C000AF0D9 /* LoaderView.swift */; };
+		C6B2DDB51F7E86C2008CC6B7 /* EncryptionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2DDB41F7E86C2008CC6B7 /* EncryptionServiceTests.swift */; };
+		C6BA071B1F7D4B0000CABF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA071A1F7D4B0000CABF65 /* AppDelegate.swift */; };
+		C6BA07221F7D4B0000CABF65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BA07211F7D4B0000CABF65 /* Assets.xcassets */; };
+		C6BA07251F7D4B0000CABF65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BA07231F7D4B0000CABF65 /* LaunchScreen.storyboard */; };
+		C6BA07301F7D4B0000CABF65 /* EncryptQRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BA072F1F7D4B0000CABF65 /* EncryptQRTests.swift */; };
+		EF8A72A73420A3D499E2DC0A /* Pods_EncryptQR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0809BA38FEE495F28A51D066 /* Pods_EncryptQR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6BA072C1F7D4B0000CABF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6BA070F1F7D4B0000CABF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA07161F7D4B0000CABF65;
+			remoteInfo = EncryptQR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0809BA38FEE495F28A51D066 /* Pods_EncryptQR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptQR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DBBC504578C2DB888967E9B /* Pods-EncryptQR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptQR.release.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptQR/Pods-EncryptQR.release.xcconfig"; sourceTree = "<group>"; };
+		2ACE38438A903D6D991080C4 /* Pods-EncryptQRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptQRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptQRTests/Pods-EncryptQRTests.release.xcconfig"; sourceTree = "<group>"; };
+		50F3B2E1EB057628E4DE6F6D /* Pods_EncryptQRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EncryptQRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6996912D2DB2A0207DC3CD2F /* Pods-EncryptQR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptQR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptQR/Pods-EncryptQR.debug.xcconfig"; sourceTree = "<group>"; };
+		C6089A3D1F7EA639006B5358 /* EncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionService.swift; sourceTree = "<group>"; };
+		C6089A3F1F7EBD2B006B5358 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C60E00B31F82A46E00F286D2 /* QRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRService.swift; sourceTree = "<group>"; };
+		C60E00B51F82A81000F286D2 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		C617E9021F7D4CC4009182EB /* CustomLogFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLogFormatter.swift; sourceTree = "<group>"; };
+		C617E9081F7D58AD009182EB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C617E90A1F7D58BD009182EB /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		C642074D1F7ED4AB008A2712 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C6A41CCC1F825D1C000AF0D9 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		C6B2DDB41F7E86C2008CC6B7 /* EncryptionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionServiceTests.swift; sourceTree = "<group>"; };
+		C6BA07171F7D4B0000CABF65 /* EncryptQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BA071A1F7D4B0000CABF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6BA07211F7D4B0000CABF65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6BA07241F7D4B0000CABF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C6BA07261F7D4B0000CABF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BA072B1F7D4B0000CABF65 /* EncryptQRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptQRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BA072F1F7D4B0000CABF65 /* EncryptQRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptQRTests.swift; sourceTree = "<group>"; };
+		C6BA07311F7D4B0000CABF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4FB52EF3E5B0D32A76037A /* Pods-EncryptQRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EncryptQRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EncryptQRTests/Pods-EncryptQRTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6BA07141F7D4B0000CABF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF8A72A73420A3D499E2DC0A /* Pods_EncryptQR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BA07281F7D4B0000CABF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C13D00CAAEDDDA0145DCD9D2 /* Pods_EncryptQRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A450F671316DBE44E069115 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0809BA38FEE495F28A51D066 /* Pods_EncryptQR.framework */,
+				50F3B2E1EB057628E4DE6F6D /* Pods_EncryptQRTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5743641493C74B8DA4CBE6C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6996912D2DB2A0207DC3CD2F /* Pods-EncryptQR.debug.xcconfig */,
+				1DBBC504578C2DB888967E9B /* Pods-EncryptQR.release.xcconfig */,
+				EA4FB52EF3E5B0D32A76037A /* Pods-EncryptQRTests.debug.xcconfig */,
+				2ACE38438A903D6D991080C4 /* Pods-EncryptQRTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C617E90C1F7D58C9009182EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C617E90E1F7D58DE009182EB /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C617E90E1F7D58DE009182EB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C617E9081F7D58AD009182EB /* MainViewController.swift */,
+				C617E90A1F7D58BD009182EB /* MainController.swift */,
+				C60E00B51F82A81000F286D2 /* QRScannerViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C6BA070E1F7D4B0000CABF65 = {
+			isa = PBXGroup;
+			children = (
+				C6BA07191F7D4B0000CABF65 /* EncryptQR */,
+				C6BA072E1F7D4B0000CABF65 /* EncryptQRTests */,
+				C6BA07181F7D4B0000CABF65 /* Products */,
+				5743641493C74B8DA4CBE6C0 /* Pods */,
+				1A450F671316DBE44E069115 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C6BA07181F7D4B0000CABF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6BA07171F7D4B0000CABF65 /* EncryptQR.app */,
+				C6BA072B1F7D4B0000CABF65 /* EncryptQRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6BA07191F7D4B0000CABF65 /* EncryptQR */ = {
+			isa = PBXGroup;
+			children = (
+				C6BA071A1F7D4B0000CABF65 /* AppDelegate.swift */,
+				C617E9021F7D4CC4009182EB /* CustomLogFormatter.swift */,
+				C6089A3D1F7EA639006B5358 /* EncryptionService.swift */,
+				C60E00B31F82A46E00F286D2 /* QRService.swift */,
+				C6089A3F1F7EBD2B006B5358 /* Constants.swift */,
+				C642074D1F7ED4AB008A2712 /* Photo.swift */,
+				C6A41CCC1F825D1C000AF0D9 /* LoaderView.swift */,
+				C617E90C1F7D58C9009182EB /* Controllers */,
+				C6BA07211F7D4B0000CABF65 /* Assets.xcassets */,
+				C6BA07231F7D4B0000CABF65 /* LaunchScreen.storyboard */,
+				C6BA07261F7D4B0000CABF65 /* Info.plist */,
+			);
+			path = EncryptQR;
+			sourceTree = "<group>";
+		};
+		C6BA072E1F7D4B0000CABF65 /* EncryptQRTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6BA072F1F7D4B0000CABF65 /* EncryptQRTests.swift */,
+				C6B2DDB41F7E86C2008CC6B7 /* EncryptionServiceTests.swift */,
+				C6BA07311F7D4B0000CABF65 /* Info.plist */,
+			);
+			path = EncryptQRTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6BA07161F7D4B0000CABF65 /* EncryptQR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BA07341F7D4B0000CABF65 /* Build configuration list for PBXNativeTarget "EncryptQR" */;
+			buildPhases = (
+				398BEE5FBB7249FE42D61145 /* [CP] Check Pods Manifest.lock */,
+				C6BA07131F7D4B0000CABF65 /* Sources */,
+				C6BA07141F7D4B0000CABF65 /* Frameworks */,
+				C6BA07151F7D4B0000CABF65 /* Resources */,
+				B0209B71E703D5F1AD002B00 /* [CP] Embed Pods Frameworks */,
+				98F474C3D74123A35EA8D4AE /* [CP] Copy Pods Resources */,
+				C617E9011F7D4C5A009182EB /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EncryptQR;
+			productName = EncryptQR;
+			productReference = C6BA07171F7D4B0000CABF65 /* EncryptQR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6BA072A1F7D4B0000CABF65 /* EncryptQRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6BA07371F7D4B0000CABF65 /* Build configuration list for PBXNativeTarget "EncryptQRTests" */;
+			buildPhases = (
+				CBC83B28B07631376D958F68 /* [CP] Check Pods Manifest.lock */,
+				C6BA07271F7D4B0000CABF65 /* Sources */,
+				C6BA07281F7D4B0000CABF65 /* Frameworks */,
+				C6BA07291F7D4B0000CABF65 /* Resources */,
+				B89F7B85491A1CD4918E5E9A /* [CP] Embed Pods Frameworks */,
+				02BCD9D3C8BBB9254614207C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6BA072D1F7D4B0000CABF65 /* PBXTargetDependency */,
+			);
+			name = EncryptQRTests;
+			productName = EncryptQRTests;
+			productReference = C6BA072B1F7D4B0000CABF65 /* EncryptQRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6BA070F1F7D4B0000CABF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = enzosv;
+				TargetAttributes = {
+					C6BA07161F7D4B0000CABF65 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					C6BA072A1F7D4B0000CABF65 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C6BA07161F7D4B0000CABF65;
+					};
+				};
+			};
+			buildConfigurationList = C6BA07121F7D4B0000CABF65 /* Build configuration list for PBXProject "EncryptQR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6BA070E1F7D4B0000CABF65;
+			productRefGroup = C6BA07181F7D4B0000CABF65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6BA07161F7D4B0000CABF65 /* EncryptQR */,
+				C6BA072A1F7D4B0000CABF65 /* EncryptQRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6BA07151F7D4B0000CABF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BA07251F7D4B0000CABF65 /* LaunchScreen.storyboard in Resources */,
+				C6BA07221F7D4B0000CABF65 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BA07291F7D4B0000CABF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02BCD9D3C8BBB9254614207C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EncryptQRTests/Pods-EncryptQRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		398BEE5FBB7249FE42D61145 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EncryptQR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F474C3D74123A35EA8D4AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EncryptQR/Pods-EncryptQR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0209B71E703D5F1AD002B00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EncryptQR/Pods-EncryptQR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/NYTPhotoViewer/NYTPhotoViewer.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYTPhotoViewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EncryptQR/Pods-EncryptQR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89F7B85491A1CD4918E5E9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EncryptQRTests/Pods-EncryptQRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C617E9011F7D4C5A009182EB /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect\n\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		CBC83B28B07631376D958F68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EncryptQRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6BA07131F7D4B0000CABF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60E00B61F82A81000F286D2 /* QRScannerViewController.swift in Sources */,
+				C6089A3E1F7EA639006B5358 /* EncryptionService.swift in Sources */,
+				C617E90B1F7D58BD009182EB /* MainController.swift in Sources */,
+				C617E9031F7D4CC4009182EB /* CustomLogFormatter.swift in Sources */,
+				C642074E1F7ED4AB008A2712 /* Photo.swift in Sources */,
+				C6BA071B1F7D4B0000CABF65 /* AppDelegate.swift in Sources */,
+				C6A41CCD1F825D1C000AF0D9 /* LoaderView.swift in Sources */,
+				C617E9091F7D58AD009182EB /* MainViewController.swift in Sources */,
+				C60E00B41F82A46E00F286D2 /* QRService.swift in Sources */,
+				C6089A401F7EBD2B006B5358 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6BA07271F7D4B0000CABF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6BA07301F7D4B0000CABF65 /* EncryptQRTests.swift in Sources */,
+				C6B2DDB51F7E86C2008CC6B7 /* EncryptionServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6BA072D1F7D4B0000CABF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6BA07161F7D4B0000CABF65 /* EncryptQR */;
+			targetProxy = C6BA072C1F7D4B0000CABF65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6BA07231F7D4B0000CABF65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6BA07241F7D4B0000CABF65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6BA07321F7D4B0000CABF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C6BA07331F7D4B0000CABF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6BA07351F7D4B0000CABF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6996912D2DB2A0207DC3CD2F /* Pods-EncryptQR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U73E37TP;
+				INFOPLIST_FILE = EncryptQR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enzosv.EncryptQR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6BA07361F7D4B0000CABF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBBC504578C2DB888967E9B /* Pods-EncryptQR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U73E37TP;
+				INFOPLIST_FILE = EncryptQR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enzosv.EncryptQR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C6BA07381F7D4B0000CABF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4FB52EF3E5B0D32A76037A /* Pods-EncryptQRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U73E37TP;
+				INFOPLIST_FILE = EncryptQRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enzosv.EncryptQRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncryptQR.app/EncryptQR";
+			};
+			name = Debug;
+		};
+		C6BA07391F7D4B0000CABF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ACE38438A903D6D991080C4 /* Pods-EncryptQRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U73E37TP;
+				INFOPLIST_FILE = EncryptQRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enzosv.EncryptQRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EncryptQR.app/EncryptQR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6BA07121F7D4B0000CABF65 /* Build configuration list for PBXProject "EncryptQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BA07321F7D4B0000CABF65 /* Debug */,
+				C6BA07331F7D4B0000CABF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BA07341F7D4B0000CABF65 /* Build configuration list for PBXNativeTarget "EncryptQR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BA07351F7D4B0000CABF65 /* Debug */,
+				C6BA07361F7D4B0000CABF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6BA07371F7D4B0000CABF65 /* Build configuration list for PBXNativeTarget "EncryptQRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6BA07381F7D4B0000CABF65 /* Debug */,
+				C6BA07391F7D4B0000CABF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6BA070F1F7D4B0000CABF65 /* Project object */;
+}

@@ -1,0 +1,37 @@
+PODS:
+  - CocoaLumberjack/Default (3.2.1)
+  - CocoaLumberjack/Swift (3.2.1):
+    - CocoaLumberjack/Default
+  - CryptoSwift (0.7.2)
+  - FLAnimatedImage (1.0.12)
+  - JVFloatLabeledTextField (1.2.0)
+  - NYTPhotoViewer (1.0.1):
+    - NYTPhotoViewer/AnimatedGifSupport (= 1.0.1)
+    - NYTPhotoViewer/Core (= 1.0.1)
+  - NYTPhotoViewer/AnimatedGifSupport (1.0.1):
+    - FLAnimatedImage (~> 1.0.8)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (1.0.1)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.22.0)
+
+DEPENDENCIES:
+  - CocoaLumberjack/Swift
+  - CryptoSwift
+  - JVFloatLabeledTextField
+  - NYTPhotoViewer (~> 1.0.0)
+  - SnapKit
+  - SwiftLint
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 2800c03334042fe80589423c8d80e582dcaec482
+  CryptoSwift: cd2158be2bf639aabc63ec804707c7137c90157c
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  JVFloatLabeledTextField: 96c0c1b6739001801340d25b86aff990d67c4181
+  NYTPhotoViewer: 98e0a54a9d28e4a980fc4b611fd5e419ca89ad74
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: 1134786caedd2caab0560d2f36b76414a5a56808
+
+PODFILE CHECKSUM: 00aac8403a978e4f967b93ab75637be05494b6f5
+
+COCOAPODS: 1.3.1
